@@ -6,9 +6,12 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 
 class LoadPopularMovies {
-
+/*
     suspend fun invoke(): List<Movie> = withContext(Dispatchers.IO){
         delay(2000)
         getMovies()
     }
+
+
+ */
 }

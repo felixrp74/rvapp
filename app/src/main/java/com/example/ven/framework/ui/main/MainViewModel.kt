@@ -9,7 +9,7 @@ import com.example.ven.framework.usecases.LoadPopularMovies
 import kotlinx.coroutines.launch
 
 class MainViewModel : ViewModel() {
-
+/*
     private val loadPopularMovies: LoadPopularMovies
 
     private val _progressVisible = MutableLiveData<Boolean>()
@@ -33,5 +33,5 @@ class MainViewModel : ViewModel() {
     fun onMovieClicked(movie: Movie){
         showMessage.value = movie.title
     }
-
+*/
 }
