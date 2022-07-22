@@ -3,20 +3,28 @@ package com.example.ven
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.ven.framework.ui.main.CustomAdapter
+import com.example.ven.adapter.SuperHeroAdapter
+import com.example.ven.data.datasources.SuperHeroprovider
+import com.example.ven.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-        val adapter = CustomAdapter()
-
-        recyclerView.layoutManager=LinearLayoutManager(this)
-        recyclerView.adapter=adapter
+        initRecyclerView()
 
 
+    }
+
+    private fun initRecyclerView() {
+
+        binding.recyclerSuperHero.layoutManager=LinearLayoutManager(this)
+        binding.recyclerSuperHero.adapter=SuperHeroAdapter(SuperHeroprovider.superheroList)
     }
 }

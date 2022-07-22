@@ -17,7 +17,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/item_image"
+            android:id="@+id/ivSuperHero"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_width="100dp"
@@ -28,9 +28,9 @@
             android:layout_height="wrap_content"
             android:text="codelia"
             android:textColor="@color/white"
-            android:id="@+id/item_title"
+            android:id="@+id/tvSuperHeroName"
             android:textStyle="bold"
-            android:layout_toEndOf="@id/item_image"
+            android:layout_toEndOf="@id/ivSuperHero"
             android:layout_alignParentTop="true"
             android:textSize="30sp"/>
 
@@ -39,10 +39,10 @@
             android:layout_height="wrap_content"
             android:text="codelia"
             android:textColor="@color/white"
-            android:id="@+id/item_detail"
+            android:id="@+id/tvRealName"
             android:textStyle="italic"
-            android:layout_toEndOf="@id/item_image"
-            android:layout_below="@id/item_title"
+            android:layout_toEndOf="@id/ivSuperHero"
+            android:layout_below="@id/tvSuperHeroName"
             android:textSize="15sp"/>
 
     </RelativeLayout>
