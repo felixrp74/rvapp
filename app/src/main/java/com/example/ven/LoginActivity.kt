@@ -20,33 +20,35 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+        if (auth.currentUser != null) startApp()
+
+
         binding.loginBtn.setOnClickListener {
             val email = binding.emailEt.text.toString()
             val password = binding.passwordEt.text.toString()
-
-
 
             auth.signInWithEmailAndPassword(email, password)
                 .addOnSuccessListener {
                     Log.e("login success",email)
                     Log.e("login success",password)
 
-//                    val intent  = Intent(this, MainActivity::class.java)
-                    val intent = Intent(this, RegisterActivity::class.java)
-                    startActivity(intent)
-                    finish() // to finish login, disipear login.
+                    startApp()
 
                 }
                 .addOnFailureListener {
                     Log.e("login erro",email)
                     Log.e("login failure",password)
 
-                    AlertDialog.Builder(this).apply {
-                        setTitle("error")
-                        setMessage(it.message)
-                        setPositiveButton("Aceptar", null)
-                    }.show()
+                    Utils.showError(this, it.message.toString())
+
+
                 }
+        }
+
+        binding.createaccountTv.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
         }
 
 
@@ -54,6 +56,12 @@ class LoginActivity : AppCompatActivity() {
         initRecyclerView()
 
 
+    }
+
+    private fun startApp() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
     private fun initRecyclerView() {

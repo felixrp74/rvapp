@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/felix/AndroidStudioProjects/ven/app/src/main/res/layout/activity_login.xml" value="0.1621376811594203" />
         <entry key="..\:/Users/felix/AndroidStudioProjects/ven/app/src/main/res/layout/activity_main.xml" value="0.19972826086956522" />
+        <entry key="..\:/Users/felix/AndroidStudioProjects/ven/app/src/main/res/layout/activity_register.xml" value="0.1621376811594203" />
         <entry key="..\:/Users/felix/AndroidStudioProjects/ven/app/src/main/res/layout/card_view.xml" value="0.4714285714285714" />
         <entry key="..\:/Users/felix/AndroidStudioProjects/ven/app/src/main/res/layout/item_superhero.xml" value="0.1911231884057971" />
         <entry key="..\:/Users/felix/AndroidStudioProjects/ven/app/src/main/res/layout/view_movie.xml" value="0.14447463768115942" />
+        <entry key="..\:/Users/felix/AndroidStudioProjects/ven/app/src/main/res/menu/menu_main.xml" value="0.18703703703703703" />
       </map>
     </option>
   </component>
