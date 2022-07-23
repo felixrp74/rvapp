@@ -9,8 +9,6 @@ import com.example.ven.domain.SuperHero
 
 class SuperHeroAdapter(private val superHeroList: List<SuperHero>):RecyclerView.Adapter<SuperHeroViewHolder>() {
 
-    inner class ViewHolder(val binding: ItemSuperheroBinding) : RecyclerView.ViewHolder(binding.root)
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SuperHeroViewHolder {
 
         val layoutInflater = LayoutInflater.from(parent.context)
