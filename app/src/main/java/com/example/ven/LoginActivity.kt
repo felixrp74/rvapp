@@ -1,9 +1,7 @@
 package com.example.ven
-// C:\Users\felix\AndroidStudioProjects\ven\app\src\main\java\com\example\ven\MainActivity.kt
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ven.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
